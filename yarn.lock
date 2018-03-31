@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@kirschbaum-development/laravel-translations-loader@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@kirschbaum-development/laravel-translations-loader/-/laravel-translations-loader-0.0.9.tgz#20679a64546fb9424491f7a16143e540068c1add"
+"@kirschbaum-development/laravel-translations-loader@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@kirschbaum-development/laravel-translations-loader/-/laravel-translations-loader-0.2.1.tgz#6fd19e7f4dffcee07f93a17b493a0253463bdd1d"
   dependencies:
     lodash "^4.17.5"
     php-array-parser "^1.0.1"
@@ -3226,6 +3226,10 @@ http-signature@~1.1.0:
 https-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
+
+i18next@^10.6.0:
+  version "10.6.0"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-10.6.0.tgz#90ffd9f9bc617f34b9a12e037260f524445f7684"
 
 iconv-lite@0.4.19:
   version "0.4.19"

@@ -10,9 +10,7 @@ require('./bootstrap');
 /**
  * Language bundle
  */
-
-import languageBundle from '@kirschbaum-development/laravel-translations-loader?files=auth,validation!@kirschbaum-development/laravel-translations-loader';
-console.log(languageBundle);
+import languageBundle from '@kirschbaum-development/laravel-translations-loader!@kirschbaum-development/laravel-translations-loader';
 
 window.Vue = require('vue');
 import VueI18n from 'vue-i18n';
@@ -34,4 +32,19 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app',
     i18n: i18n
+});
+
+/**
+ * Using with i18next
+ */
+import i18next from 'i18next';
+import i18nextLanguageBundle from '@kirschbaum-development/laravel-translations-loader?namespace=translation!@kirschbaum-development/laravel-translations-loader';
+
+i18next.init({
+    lng: window.Locale,
+    debug: true,
+    resources: i18nextLanguageBundle
+}, function (err, t) {
+    console.log(i18next.t('Hello World'));
+    console.log(i18next.t('auth.failed'));
 });

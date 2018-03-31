@@ -20,7 +20,8 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
-        "@kirschbaum-development/laravel-translations-loader": "^0.0.9",
+        "@kirschbaum-development/laravel-translations-loader": "^0.2.1",
+        "i18next": "^10.6.0",
         "loader-utils": "^1.1.0",
         "php-array-parser": "^1.0.1",
         "vue-i18n": "^7.4.2"
